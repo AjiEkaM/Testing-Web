@@ -125,7 +125,6 @@ html{
   margin-left: 35%;
   margin-top: 100px;
   border-radius: 100px;
-
   z-index: 9999;
 }
 
@@ -151,10 +150,6 @@ html{
   left: 5%;
   overflow-x: hidden;
   width: 90%;
-  
-}
-
-.tombolSlide{
   
 }
 
