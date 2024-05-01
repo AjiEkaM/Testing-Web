@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+  overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.navbarContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: lightskyblue;
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.navbarContainer{
+  padding-top: 50px;
+}
+
+.nama{
+  display: flex;
+  padding: 10px;
+  font-size: 25px;
+}
+
+
+.navbar ul li{
+  display: inline-block;
+  text-align: left;
+  padding: 10px;
+  
+  
+}
+
+.navbar ul li a{
+  color: darkslategrey;
+  list-style-type: none;
+  text-decoration: none;
+  transition: all, 0.2s;
+}
+
+.navbar ul li a:hover{
+  color: white;
+  font-size: 14px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Ubah nilai opacity sesuai kebutuhan */
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: 350px;
+}
+
+.banner1Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  
+}
+
+.banner1Content p{
+  color: white;
+}
+
+.banner1Content button{
+  margin-top: 20px;
+  color: white;
+  background-color: green;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+  transition: all, 0.2s;
+}
+
+.banner1Content button a{
+  text-decoration: none;
+  color: white;
+}
+
+.banner1Content button:hover{
+  font-size: 25px;
+  color: green;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.thiscontent1 {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('wallpaper.gif');
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3) ;
+  background-blend-mode: multiply;
+}
+
+.thiscontent1 img{
+  width: 150px;
+  height: 150px;
+  margin-left: 35%;
+  margin-top: 100px;
+  border-radius: 100px;
+
+  z-index: 9999;
+}
+
+
+.judul{
+  margin-left: 42%;
+  margin-top:10px;
+}
+
+.isi {
+  margin: 60px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgba(105, 105, 105, 0.5);
+  color: black;
+  border-radius: 10px;
+}
+
+.slidersWrapper{
+  display: flex;
+  position: absolute;
+  bottom: -20%;
+  left: 5%;
+  overflow-x: hidden;
+  width: 90%;
+  
+}
+
+.tombolSlide{
+  
+}
+
+.bannerSlide {
+  display: flex;
+  transition: transform 3s ease;
+}
+
+.bannerSlide img{
+  display: flex;
+  width: 500px;
+}
+
+.tombolSlide{
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  z-index: 999;
+}
+
+.slide1 {
+  transform: translateX(0%);
+}
+
+.slide2 {
+  transform: translateX(-100%);
+}
+
+.slide3 {
+  transform: translateX(-200%);
+}
+
+.comingSoon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 10px solid;
+}
