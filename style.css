@@ -146,8 +146,8 @@ html{
 .slidersWrapper{
   display: flex;
   position: absolute;
-  bottom: -20%;
-  left: 5%;
+  margin-top: -80%;
+  margin-left: 5%;
   overflow-x: hidden;
   width: 90%;
   
@@ -189,4 +189,103 @@ html{
   align-items: center;
   height: 100vh;
   border: 10px solid;
+  
+}
+
+.project{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.1s;
+}
+
+.project:hover{
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  
+}
+
+
+/* Untuk perangkat dengan lebar layar maksimum 320px */
+@media only screen and (max-width: 400px) {
+    .navbar ul {
+        font-size: 10px;
+    }
+    .judul{
+  margin-left: 40%;
+  margin-top:10px;
+}
+
+.isi {
+  margin: 1px;
+  margin-top: 10px;
+  background-color: rgba(105, 105, 105, 0.5);
+  color: black;
+  border-radius: 10px;
+}
+
+.thiscontent1 img{
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
+  margin-top: 20px;
+  border-radius: 100px;}
+.slidersWrapper{
+  display: flex;
+  position: absolute;
+  margin-top: -65%;
+  margin-left: 5%;
+  overflow-x: hidden;
+  width: 90%;
+  
+}
+.bannerSlide {
+  display: flex;
+  transition: transform 3s ease;
+}
+.bannerSlide img{
+  display: flex;
+  width: 365px;
+  height: 200px;
+}
+.tombolSlide{
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  z-index: 9;
+}
+.slide1 {
+  transform: translateX(0%);
+}
+.slide2 {
+  transform: translateX(-100%);
+}
+.slide3 {
+  transform: translateX(-200%);
+}
+.comingSoon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 10px solid;
+}
+.banner {
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.banner img {
+  display: block;
+  width: 100%;
+  height: 200px;
 }
